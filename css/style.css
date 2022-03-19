@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300;1,400&family=Martel:wght@200;300;400;600;700&display=swap');
+html {
+  margin-left: 10px;
+  margin-right: 10px;
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.4s;
+}
+a:hover {
+  color: inherit;
+}
+header {
+  margin-bottom: 30px;
+}
+header img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 65px;
+  max-width: 100%;
+}
+nav {
+  padding: 15px;
+  display: inline;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+nav h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  font-family: Montserrat;
+  transition: 0.5s;
+}
+h2:hover {
+  -ms-transform: scale(1.02); /* IE 9 */
+  -webkit-transform: scale(1.02); /* Safari 3-8 */
+  transform: scale(1.02);
+}
+.container-fluid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0px;
+}
+.container-fluid img {
+  vertical-align: middle;
+  max-width: 100%;
+  margin: 5px;
+  position: relative;
+  box-sizing: border-box;
+  transition: 0.4s;
+  display: flex;
+  align-items: stretch;
+}
+.rightimg {
+  animation-name: entranceright;
+  animation-duration: 1.2s;
+}
+@keyframes entranceright {
+  0% {
+    right: -300px;
+    opacity: 0%;
+  }
+  100% {
+    right: 0px;
+    opacity: 100%;
+  }
+}
+.leftimg {
+  animation-name: entranceleft;
+  animation-duration: 1.2s;
+}
+@keyframes entranceleft {
+  0% {
+    left: -300px;
+    opacity: 0%;
+  }
+  100% {
+    left: 0px;
+    opacity: 100%;
+  }
+}
+.container-fluid img:hover {
+  -ms-transform: scale(99%); /* IE 9 */
+  -webkit-transform: scale(99%); /* Safari 3-8 */
+  transform: scale(99%);
+  filter: brightness(55%);
+}
+.img1 {
+  animation-name: entranceleft;
+  animation-duration: 1.2s;
+}
+.img2 {
+  animation-name: entranceright;
+  animation-duration: 1.2s;
+}
+
+.img3 {
+  animation-name: entranceleft;
+  animation-duration: 1.2s;
+}
+.img4 {
+  animation-name: entranceright;
+  animation-duration: 1.2s;
+}
+footer {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: flex-end;
+}
+footer > p {
+  font-size: 13px;
+  font-family: Montserrat;
+}
+@media only screen and (max-width: 1000px) {
+  main > .container-fluid > img {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .topimg {
+    max-height: 430px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .bottomimg {
+    max-height: 320px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  header img {
+    max-width: 13%;
+  }
+}
+/* @media only screen and (min-width: 1000px){
+    header h2 {
+        max-width: 84%;
+        }  
+    } */
+svg {
+  width: 30px;
+  height: 30px;
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes pulse {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+svg:hover {
+}
