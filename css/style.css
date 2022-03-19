@@ -93,9 +93,9 @@ h2:hover {
   }
 }
 .container-fluid img:hover {
-  -ms-transform: scale(99%); /* IE 9 */
-  -webkit-transform: scale(99%); /* Safari 3-8 */
-  transform: scale(99%);
+  -ms-transform: scale(0.99); /* IE 9 */
+  -webkit-transform: scale(0.99); /* Safari 3-8 */
+  transform: scale(0.99);
   filter: brightness(55%);
 }
 .img1 {
