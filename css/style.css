@@ -4,6 +4,7 @@ html {
   margin-left: 10px;
   margin-right: 10px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 a {
   color: inherit;
@@ -116,15 +117,20 @@ h2:hover {
   animation-duration: 1.2s;
 }
 footer {
-  display: flex;
+  display: grid;
   width: 100%;
   height: 200px;
   justify-content: center;
   align-items: flex-end;
+  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(3, 3fr);
 }
 footer > p {
+  grid-row: 2/3;
+  grid-column: 2/3;
   font-size: 13px;
   font-family: Montserrat;
+  justify-self: center;
 }
 @media only screen and (max-width: 1000px) {
   main > .container-fluid > img {
@@ -146,25 +152,37 @@ footer > p {
     max-width: 13%;
   }
 }
-/* @media only screen and (min-width: 1000px){
-    header h2 {
-        max-width: 84%;
-        }  
-    } */
-svg {
-  width: 30px;
-  height: 30px;
-  animation-name: pulse;
-  animation-duration: 3s;
+#myBtn {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  animation: bumping;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
+  opacity: 60%;
 }
-@keyframes pulse {
-  50% {
-    transform: scale(1.2);
+@keyframes bumping {
+  0% {
+    transform: translate(0px, 0px);
   }
-  100% {
-    transform: scale(1);
+  30% {
+    transform: translate(0px, -20px);
+  }
+  80% {
+    transform: translate(0px, 0px);
   }
 }
-svg:hover {
+#myBtn:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+  /* transform: translate(0px, -20px); */
 }
