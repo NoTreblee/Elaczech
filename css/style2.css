@@ -1,18 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 * {
   margin: 0;
   padding: 0;
 }
+html {
+  overflow-y: hidden;
+}
 main {
   display: grid;
-  grid-template-rows: repeat(12, 12vh);
-  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(17, 6vh);
+  grid-template-columns: repeat(5, 20%);
   grid-column: 1/-1;
   grid-row: 1/-1;
 }
 body {
   display: grid;
-  grid-template-rows: repeat(12, 12vh);
-  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(17, 6vh);
+  grid-template-columns: repeat(5, 20%);
 }
 
 header {
@@ -35,7 +39,7 @@ header img {
   max-width: 100%;
   justify-content: center;
   align-items: flex-end;
-  grid-row: 2/8;
+  grid-row: 1/16;
   grid-column: 1/-1;
   display: flex;
 }
@@ -43,24 +47,56 @@ header img {
   transform: scale(0.6);
   max-height: 100%;
   max-width: 100%;
-  height: 100%;
+  height: 90%;
 }
 .icons {
-  /* position: relative;
-  max-height: 200px;
-  justify-content: center;
-  align-items: flex-start; */
-  grid-row: 8/9;
-  grid-column: 5/6;
+  grid-row: 14/18;
+  grid-column: 3/4;
+  display: grid;
+  grid-template-rows: repeat(2, 49px);
+  gap: 5px;
 }
 .icons a svg {
-  width: 50px;
+  width: 30px;
   position: relative;
   display: flex;
   justify-content: center;
+  align-self: center;
+  opacity: 60%;
 }
 .icons a {
   display: flex;
   justify-content: center;
   position: relative;
+}
+nav {
+  padding: 15px;
+  display: inline;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+nav h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  font-family: Montserrat;
+  transition: 0.5s;
+  align-items: center;
+}
+nav a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.4s;
+  z-index: 99;
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+nav a:hover {
+  color: inherit;
 }

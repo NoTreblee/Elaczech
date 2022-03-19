@@ -4,6 +4,7 @@ html {
   margin-left: 10px;
   margin-right: 10px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 a {
   color: inherit;
