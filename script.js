@@ -6,8 +6,10 @@ function topFunction() {
 function openNav() {
   document.getElementById('mySidenav').style.height = '230px';
   document.getElementById('header').style.marginTop = '230px';
+  document.getElementById('main').style.marginTop = '230px';
 }
 function closeNav() {
   document.getElementById('mySidenav').style.height = '0';
   document.getElementById('header').style.marginTop = '0';
+  document.getElementById('main').style.marginTop = '0';
 }

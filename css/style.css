@@ -19,6 +19,7 @@ header {
   display: grid;
   grid-template-rows: repeat(2, 50%);
   transition-duration: 0.4s;
+  justify-content: center;
 }
 header img {
   display: flex;
@@ -224,6 +225,9 @@ footer > p {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 .sidenav {
+  display: grid;
+  justify-content: center;
+  align-items: center;
   height: 0;
   width: 100%;
   position: fixed;
@@ -235,6 +239,7 @@ footer > p {
   transition: 0.4s;
   /* padding: 60px;
   padding-top: 0; */
+  text-align: left;
 }
 
 .sidenav a {
