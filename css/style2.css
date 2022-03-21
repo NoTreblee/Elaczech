@@ -17,6 +17,8 @@ main {
   transition-duration: 0.4s;
 }
 body {
+  margin-right: 10px;
+  margin-left: 10px;
   display: grid;
   grid-template-rows: repeat(20, 6vh);
   grid-template-columns: repeat(5, 20%);
