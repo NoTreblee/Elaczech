@@ -5,8 +5,8 @@
 }
 html {
   overflow-y: hidden;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0;
+  padding: 0;
 }
 main {
   display: grid;
@@ -75,7 +75,7 @@ nav {
   max-width: 100%;
   justify-content: center;
   align-items: flex-end;
-  grid-row: 1/16;
+  grid-row: 2/18;
   grid-column: 1/-1;
   display: grid;
   grid-template-rows: repeat(17, 6vh);
@@ -89,7 +89,7 @@ nav {
   justify-self: center;
 }
 .icons {
-  grid-row: 14/18;
+  grid-row: 15/18;
   grid-column: 3/4;
   display: grid;
   grid-template-rows: repeat(2, 49px);
@@ -163,10 +163,11 @@ nav a:hover {
   transition: 0.4s;
   /* padding: 60px;
   padding-top: 0; */
+  font-family: Montserrat;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 8px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
@@ -174,6 +175,7 @@ nav a:hover {
   transition: 0.3s;
   display: flex;
   justify-content: center;
+  font-family: Montserrat;
 }
 
 .sidenav a:hover {
