@@ -1,0 +1,133 @@
+@media only screen and (max-width: 1000px) {
+  main > .container-fluid > img {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .topimg {
+    max-height: 430px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .bottomimg {
+    max-height: 320px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  header img {
+    max-width: 13%;
+  }
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+body {
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: center;
+}
+header {
+  margin-bottom: -5px;
+  display: grid;
+  grid-template-rows: repeat(2, 50%);
+  transition-duration: 0.4s;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 65px;
+  width: 100%;
+}
+nav {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+nav h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  font-family: Montserrat;
+  transition: 0.5s;
+}
+h2:hover {
+  -ms-transform: scale(1.02); /* IE 9 */
+  -webkit-transform: scale(1.02); /* Safari 3-8 */
+  transform: scale(1.02);
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0px;
+}
+.sidenav {
+  overflow: hidden;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow: hidden;
+  transition: 0.4s;
+  text-align: center;
+  font-family: Montserrat;
+}
+.opened {
+  height: 220px;
+}
+.headertop {
+  margin-top: 220px;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+.sidenav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+nav {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}

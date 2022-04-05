@@ -22,6 +22,7 @@ body {
   display: grid;
   grid-template-rows: repeat(20, 6vh);
   grid-template-columns: repeat(5, 20%);
+  transition-duration: 0.4s;
 }
 
 header {
@@ -204,4 +205,14 @@ nav {
   .sidenav a {
     font-size: 18px;
   }
+}
+.opened {
+  height: 220px;
+}
+.bodytop {
+  margin-top: 220px;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
 }
