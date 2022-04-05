@@ -23,17 +23,16 @@
         src="https://elaczech.eu/wp-content/uploads/2022/01/logo-web-5-1024x313.png"
       />
       <nav>
-        <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        <span style="font-size: 30px; cursor: pointer" id="navButton"
           >&#9776;
         </span>
         <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            >&times;</a
-          >
-          <a href="./index.html">Home</a>
-          <a href="#">Services</a>
-          <a href="#">About</a>
-          <a href="./index2.html">Contact</a>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -61,7 +60,7 @@
     <script src="script.js"></script>
   </body>
   <footer>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <button onclick="topFunction()" id="myBtn" class="mybtn" title="Go to top">
       <i class="fa-solid fa-arrow-up-long"></i>
     </button>
     <p>© 2022 Ela Czech Designstudio. All Rights Reserved.</p>
