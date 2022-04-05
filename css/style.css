@@ -41,22 +41,6 @@ nav {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-nav h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  max-width: 100%;
-  font-family: Montserrat;
-  transition: 0.5s;
-}
-h2:hover {
-  -ms-transform: scale(1.02); /* IE 9 */
-  -webkit-transform: scale(1.02); /* Safari 3-8 */
-  transform: scale(1.02);
-}
 .container-fluid {
   width: 100%;
   display: flex;
@@ -238,7 +222,7 @@ ul {
 }
 
 .sidenav a:hover {
-  color: black;
+  color: rgb(211, 211, 211);
 }
 
 .sidenav .closebtn {
